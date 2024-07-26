@@ -1,18 +1,17 @@
-```markdown
 # React Business Starter 🚀
 
 ## Introduction
 
-React Business Starter is a powerful and flexible boilerplate project designed to jumpstart your React-based business website or application. It provides a solid foundation with essential components, dynamic page configuration, and best practices in modern web development.
+React Business Starter is a robust boilerplate designed to kickstart your React-based business website or application. It offers a solid foundation with essential components, a dynamic page configuration system, and best practices in modern web development.
 
 ## Features
 
-- 🔧 **Modular Components**: Pre-built, customizable components like Header, Footer, HeroSection, BlogPreview, and more.
-- ⚙️ **Dynamic Page Configurator**: Easily create and configure various pages with the flexible PageConfigurator component.
-- 📱 **Responsive Design**: Built with CSS to ensure a smooth experience across all devices.
-- 🧹 **Clean Code**: Developed with TypeScript for better type safety and an improved development experience.
-- 💾 **Data-Driven**: Components powered by a centralized data structure, making updates straightforward.
-- 🛠️ **Redux-Toolkit Ready**: State management setup included for scalable applications.
+- 🔧 **Modular Components**: Pre-built, customizable components including Header, Footer, HeroSection, BlogPreview, and more.
+- ⚙️ **Dynamic Page Configurator**: Easily create and configure pages using the flexible `PageConfigurator` component.
+- 📱 **Responsive Design**: Ensures a smooth experience across all devices with CSS styling.
+- 🧹 **Clean Code**: Developed with TypeScript for better type safety and an enhanced development experience.
+- 💾 **Data-Driven**: Components are powered by a centralized data structure, making updates straightforward.
+- 🛠️ **Redux-Toolkit Ready**: Includes setup for scalable state management.
 - 🌐 **Routing System Ready**: Integrated routing for efficient and intuitive navigation.
 
 ## Getting Started
@@ -24,40 +23,35 @@ React Business Starter is a powerful and flexible boilerplate project designed t
 
 ### Installation
 
-1. Clone the repository:
-```
+1. **Clone the repository:**
 
-git clone https://github.com/yourusername/react-business-starter.git
+   ```bash
+   git clone https://github.com/mariusmonkam/react-business-starter.git
+   ```
 
-```
+2. **Navigate to the project directory:**
 
-2. Navigate to the project directory:
-```
+   ```bash
+   cd react-business-starter
+   ```
 
-cd react-business-starter
+3. **Install dependencies:**
 
-```
+   ```bash
+   npm install
+   ```
 
-3. Install dependencies:
-```
+4. **Start the development server:**
 
-npm install
+   ```bash
+   npm start
+   ```
 
-```
-
-4. Start the development server:
-```
-
-npm start
-
-```
-
-The application should now be running on `http://localhost:3000`.
+   The application should now be running on [http://localhost:3000](http://localhost:3000).
 
 ## Project Structure
 
 ```
-
 react-business-starter/
 │
 ├── src/
@@ -85,26 +79,51 @@ react-business-starter/
 │ └── ...
 ├── package.json
 └── tsconfig.json
-
 ```
 
 ## Usage
 
 ### Customizing Components
 
-All components are located in the `src/components` directory. You can easily customize these components to fit your specific needs.
+Components can be found in the `src/components` directory. Customize these components to meet your specific requirements.
 
 ### Configuring Pages
 
-Use the `PageConfigurator` component to dynamically create pages. Update the `appData` object in your data file to configure the content and structure of each page.
+Utilize the `PageConfigurator` component to dynamically create pages. Modify the `appData` object in the data file to adjust the content and structure of each page.
 
 ### Styling
 
-Global styles are defined in `src/styles/global.css`. Component-specific styles are typically co-located with their respective components.
+Global styles are defined in `src/styles/global.css`. Component-specific styles are usually located in the same directory as the component.
+
+## Example Data
+
+### Home Page Sections
+
+```json
+{
+  "type": "HeroSection",
+  "title": "Welcome to React Business Starter",
+  "subtitle": "Your journey starts here",
+  "ctaText": "Get Started",
+  "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+}
+```
+
+### Pricing Page Sections
+
+```json
+{
+  "type": "HeroSection",
+  "title": "Simple, Transparent Pricing",
+  "subtitle": "Choose the plan that's right for you",
+  "ctaText": "Get Started",
+  "image": "https://via.placeholder.com/1080x720"
+}
+```
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome! Feel free to submit a Pull Request.
 
 ## License
 
@@ -124,4 +143,3 @@ For any queries or suggestions, please open an issue on this repository.
 Happy coding! 🚀
 
 #ReactBusinessStarter #React #WebDevelopment #Frontend #OpenSource #JavaScript #StartupTech #BusinessTech #Helsinki #Espoo #Vantaa #Finland
-```
