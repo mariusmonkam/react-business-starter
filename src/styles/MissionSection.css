@@ -1,0 +1,49 @@
+/* src/styles/MissionSection.css */
+.about-mission {
+  height: 80vh; /* Set height to 80% of viewport height */
+  padding: 0 20px; /* Adjust padding for responsiveness */
+  background-color: #f4f4f4;
+  display: flex; /* Use flexbox to center content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-bottom: 40px;
+}
+
+.mission-content {
+  text-align: center;
+  max-width: 800px; /* Limit width for readability */
+  width: 100%; /* Ensure full width for small screens */
+}
+
+.mission-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 700;
+}
+
+.mission-description {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .mission-title {
+    font-size: 2rem;
+  }
+
+  .mission-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mission-title {
+    font-size: 1.75rem;
+  }
+
+  .mission-description {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,128 @@
+/* src/styles/PricingTiers.css */
+
+.pricing-tiers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, #f5f7fa, #e4e8ec);
+  min-height: 100vh; /* Ensures the section takes at least the full viewport height */
+  align-items: center; /* Center the items vertically within the viewport */
+}
+
+.tier {
+  flex: 1 1 calc(33.333% - 2rem);
+  background-color: #ffffff;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative; /* To position the ribbon */
+}
+
+.tier:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tier-name {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #007bff;
+  display: inline-block;
+}
+
+.tier-price {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 1.5rem;
+}
+
+.tier-features {
+  list-style: none;
+  padding: 0;
+  text-align: left; /* Align features to the left for better readability */
+}
+
+.tier-features li {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.tier-features li::before {
+  content: "✔";
+  color: #007bff;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.ribbon {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+.ribbon::before,
+.ribbon::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  display: block;
+  border: 5px solid #ff6347;
+}
+
+.ribbon::before {
+  top: 0;
+  left: 0;
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+
+.ribbon::after {
+  bottom: 0;
+  right: 0;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+
+.ribbon span {
+  position: absolute;
+  display: block;
+  width: 225px;
+  padding: 15px 0;
+  background-color: #ff6347;
+  color: #fff;
+  font: 700 18px/1 "Lato", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  left: -25px;
+  top: 30px;
+  transform: rotate(45deg);
+}
+
+@media (max-width: 768px) {
+  .tier {
+    flex: 1 1 100%;
+    margin-bottom: 2rem;
+  }
+
+  .tier-name {
+    font-size: 1.75rem;
+  }
+
+  .tier-price {
+    font-size: 1.25rem;
+  }
+}

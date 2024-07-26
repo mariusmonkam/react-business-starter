@@ -1,0 +1,89 @@
+/* src/styles/Footer.css */
+
+footer {
+  background-color: #f8f8f8;
+  color: #333;
+  padding: 40px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 150px;
+  margin: 10px 0;
+}
+
+.footer-section h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #007bff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.company-info {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #777;
+  margin-top: 20px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .footer-section {
+    min-width: 120px;
+    margin: 10px 0;
+  }
+
+  .footer-section h4 {
+    font-size: 1rem;
+  }
+
+  .footer-section a {
+    font-size: 0.875rem;
+  }
+
+  .company-info {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-section {
+    min-width: 100px;
+    margin: 5px 0;
+  }
+
+  .footer-section h4 {
+    font-size: 0.875rem;
+  }
+
+  .footer-section a {
+    font-size: 0.75rem;
+  }
+
+  .company-info {
+    font-size: 0.6875rem;
+  }
+}
