@@ -1,4 +1,3 @@
-````markdown
 # React Business Starter 🚀
 
 ## Introduction
@@ -51,8 +50,8 @@ React Business Starter is a robust boilerplate designed to kickstart your React-
    The application should now be running on [http://localhost:3000](http://localhost:3000).
 
 ## Project Structure
-````
 
+```
 react-business-starter/
 │
 ├── src/
@@ -80,8 +79,7 @@ react-business-starter/
 │ └── ...
 ├── package.json
 └── tsconfig.json
-
-````
+```
 
 ## Usage
 
@@ -109,7 +107,7 @@ Global styles are defined in `src/styles/global.css`. Component-specific styles 
   "ctaText": "Get Started",
   "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
 }
-````
+```
 
 ### Pricing Page Sections
 
@@ -145,7 +143,3 @@ For any queries or suggestions, please open an issue on this repository.
 Happy coding! 🚀
 
 #ReactBusinessStarter #React #WebDevelopment #Frontend #OpenSource #JavaScript #StartupTech #BusinessTech #Helsinki #Espoo #Vantaa #Finland
-
-```
-
-```
