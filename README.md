@@ -27,7 +27,7 @@ React Business Starter is a powerful and flexible boilerplate project designed t
 1. Clone the repository:
 ```
 
-git clone https://github.com/yourusername/react-business-starter.git
+git clone https://github.com/mariusmonkam/react-business-starter.git
 
 ```
 
