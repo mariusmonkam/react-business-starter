@@ -18,7 +18,7 @@ export const appData: AppData = {
           title: "Welcome to React Business Starter",
           subtitle: "Your journey starts here",
           ctaText: "Get Started",
-          image: "https://images.unsplash.com/photo-1501426026826-31c667bdf23d",
+          image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
         },
         {
           type: "TrustedBySection",
