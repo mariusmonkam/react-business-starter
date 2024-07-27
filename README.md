@@ -196,4 +196,6 @@ For any queries or suggestions, please open an issue on this repository or reach
 
 Happy coding! 🚀
 
+If you like my work, consider buying me a coffee: [Buy Me a Coffee](https://www.buymeacoffee.com/mariusmonkam)
+
 #ReactBusinessStarter #React #WebDevelopment #Frontend #OpenSource #JavaScript #StartupTech #BusinessTech #Helsinki #Espoo #Vantaa #Finland
