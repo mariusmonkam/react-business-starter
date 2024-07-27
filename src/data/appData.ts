@@ -52,6 +52,12 @@ export const appData: AppData = {
           ctaText: "Learn More",
           imagePosition: "right",
         },
+
+        {
+          type: "CallToAction",
+          title: "Ready to get started?",
+          ctaText: "Sign Up Now",
+        },
         {
           type: "UserReviews",
           reviews: [
@@ -64,11 +70,6 @@ export const appData: AppData = {
               review: "React Business Starter has transformed our business.",
             },
           ],
-        },
-        {
-          type: "CallToAction",
-          title: "Ready to get started?",
-          ctaText: "Sign Up Now",
         },
       ],
     },
@@ -106,6 +107,11 @@ export const appData: AppData = {
           ],
         },
         {
+          type: "CallToAction",
+          title: "Ready to get started?",
+          ctaText: "Sign Up Now",
+        },
+        {
           type: "FAQ",
           title: "Frequently Asked Questions",
           subtitle: "Get the answers to our most commonly asked questions.",
@@ -132,11 +138,6 @@ export const appData: AppData = {
             },
           ],
         },
-        {
-          type: "CallToAction",
-          title: "Ready to get started?",
-          ctaText: "Sign Up Now",
-        },
       ],
     },
     contact: {
@@ -149,11 +150,6 @@ export const appData: AppData = {
           address: "123 Main St",
           phone: "555-555-5555",
           email: "contact@React Business Starter.com",
-        },
-        {
-          type: "CallToAction",
-          title: "Get in Touch",
-          ctaText: "Contact Us",
         },
       ],
     },
@@ -367,5 +363,31 @@ export const appData: AppData = {
       { name: "Privacy Policy", href: "/privacy" },
       { name: "Terms Of Service", href: "/terms" },
     ],
+  },
+  theme: {
+    "background-color": "#f0f0f0",
+    "body-background-color": "#ffffff",
+    "text-color": "#333333",
+    "cta-background-color": "#007bff",
+    "cta-text-color": "#ffffff",
+    "cta-button-background-color": "#ffffff",
+    "cta-button-text-color": "#007bff",
+    "cta-button-hover-background-color": "#f8f9fa",
+    "contact-form-background-color": "#ffffff",
+    "submit-button-background-color": "#007bff",
+    "submit-button-text-color": "#ffffff",
+    "submit-button-hover-background-color": "#0056b3",
+    "feature-heading-color": "#333333",
+    "feature-text-color": "#666666",
+    "footer-background-color": "#f8f8f8",
+    "footer-text-color": "#333333",
+    "footer-link-color": "#555555",
+    "footer-icon-color": "#333333",
+    "header-background-color": "#333333",
+    "header-text-color": "#ffffff",
+    "header-link-color": "#ffffff",
+    "header-link-hover-color": "#dddddd",
+    "hero-background-color": "#007bff",
+    "hero-text-color": "#ffffff",
   },
 };

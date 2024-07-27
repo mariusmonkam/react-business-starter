@@ -1,120 +1,106 @@
+/* General styles for the header */
 header {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1000;
+  background-color: var(--header-background-color, #333);
+  color: var(--header-text-color, #fff);
+  padding: 1rem 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
 }
 
-header .container {
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  width: 100%;
+  padding: 0 20px;
 }
 
-header .logo {
+.logo {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-header .menu-toggle {
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: var(--header-link-color, #fff);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--header-link-hover-color, #ddd);
+}
+
+.theme-selector {
+  margin-left: 20px;
+  padding: 5px;
+  border: none;
+  background-color: var(--header-background-color, #333);
+  color: var(--header-text-color, #fff);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.theme-selector option {
+  background-color: var(--header-background-color, #333);
+  color: var(--header-text-color, #fff);
+}
+
+/* Menu toggle button */
+.menu-toggle {
   display: none;
   background: none;
   border: none;
-  color: #fff;
+  color: var(--header-text-color, #fff);
   font-size: 1.5rem;
   cursor: pointer;
 }
 
-header .menu-icon {
-  display: block;
-  width: 25px;
-  height: 2px;
-  background-color: #fff;
-  position: relative;
-}
-
-header .menu-icon::before,
-header .menu-icon::after {
-  content: "";
-  display: block;
-  width: 25px;
-  height: 2px;
-  background-color: #fff;
-  position: absolute;
-  left: 0;
-}
-
-header .menu-icon::before {
-  top: -7px;
-}
-
-header .menu-icon::after {
-  top: 7px;
-}
-
-header nav {
-  display: flex;
-  gap: 20px;
-}
-
-header nav a {
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-header nav a:hover {
-  color: #f39c12;
-}
-
+/* Responsive styles */
 @media (max-width: 768px) {
-  header {
-    padding: 10px 15px;
-    justify-content: space-between;
+  .nav {
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: var(--header-background-color, #333);
+    display: none;
   }
 
-  header .menu-toggle {
+  .nav.open {
+    display: flex;
+  }
+
+  .nav-links {
     display: block;
   }
 
-  header nav {
-    position: absolute;
-    top: 60px; /* Adjust based on header height */
-    right: 0;
-    background-color: #007bff;
-    width: 100%;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0;
-    transition: transform 0.3s ease-in-out;
-    transform: translateY(-100%);
+  .nav-links li {
+    margin: 15px 0;
   }
 
-  header nav.open {
-    transform: translateY(0);
+  .theme-selector {
+    margin: 10px 0;
   }
 
-  header nav a {
-    font-size: 1rem;
-    padding: 10px 20px;
-    border-bottom: 1px solid #fff;
-    width: 100%;
-    text-align: left;
-  }
-
-  header nav a:last-child {
-    border-bottom: none;
+  .menu-toggle {
+    display: block;
   }
 }

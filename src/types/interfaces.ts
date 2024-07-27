@@ -175,6 +175,34 @@ export interface FAQData extends BaseSectionData {
   faqs: FAQItem[];
 }
 
+// interfaces.ts
+export interface Theme {
+  "background-color"?: string;
+  "body-background-color"?: string;
+  "text-color"?: string;
+  "cta-background-color"?: string;
+  "cta-text-color"?: string;
+  "cta-button-background-color"?: string;
+  "cta-button-text-color"?: string;
+  "cta-button-hover-background-color"?: string;
+  "contact-form-background-color"?: string;
+  "submit-button-background-color"?: string;
+  "submit-button-text-color"?: string;
+  "submit-button-hover-background-color"?: string;
+  "feature-heading-color"?: string;
+  "feature-text-color"?: string;
+  "footer-background-color"?: string;
+  "footer-text-color"?: string;
+  "footer-link-color"?: string;
+  "footer-icon-color"?: string;
+  "header-background-color"?: string;
+  "header-text-color"?: string;
+  "header-link-color"?: string;
+  "header-link-hover-color"?: string;
+  "hero-background-color"?: string;
+  "hero-text-color"?: string;
+}
+
 // Main App Data
 export interface AppData {
   companyName: string;
@@ -188,4 +216,5 @@ export interface AppData {
     about: AboutPageData;
   };
   footer: FooterData;
+  theme: Theme;
 }
