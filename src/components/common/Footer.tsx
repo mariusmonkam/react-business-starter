@@ -90,6 +90,14 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="company-info">{appData.footer.companyInfo}</div>
+        <div className="credit">
+          <p>
+            Made with ❤️ by{" "}
+            <a href="https://www.linkedin.com/in/mariusmonkam/">
+              Marius Monkam
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
