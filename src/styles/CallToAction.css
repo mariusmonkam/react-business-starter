@@ -1,8 +1,11 @@
 /* src/styles/CallToAction.css */
 .call-to-action {
   padding: 3rem 2rem; /* Increased padding for better visual balance */
-  background-color: #007bff; /* Primary color */
-  color: #ffffff;
+  background-color: var(
+    --cta-background-color,
+    #007bff
+  ); /* Primary color for CTA */
+  color: var(--cta-text-color, #ffffff);
   text-align: center;
   border-radius: 8px; /* Rounded corners for a modern look */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
@@ -15,8 +18,8 @@
 }
 
 .call-to-action .cta-button {
-  background-color: #ffffff;
-  color: #007bff;
+  background-color: var(--cta-button-background-color, #ffffff);
+  color: var(--cta-button-text-color, #007bff);
   border: none;
   border-radius: 5px; /* Rounded corners for the button */
   padding: 0.75rem 2rem; /* Adjusted padding for a balanced look */
@@ -26,7 +29,7 @@
 }
 
 .call-to-action .cta-button:hover {
-  background-color: #f8f9fa;
+  background-color: var(--cta-button-hover-background-color, #f8f9fa);
   transform: scale(1.05); /* Slightly enlarges the button on hover */
 }
 

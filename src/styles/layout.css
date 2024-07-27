@@ -3,7 +3,7 @@
 /* Page Layout */
 .page {
   padding: 20px;
-  background-color: #fff;
+  background-color: var(--background-color, #fff);
 }
 /* Flexbox Layouts */
 .flex {
