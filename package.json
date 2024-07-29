@@ -2,7 +2,6 @@
   "name": "react-business-starter",
   "version": "1.0.0",
   "description": "React Business Starter is a perfect React boilerplate for businesses, startups, and websites for products and services. It’s designed to get you up and running quickly and efficiently on your next React project!",
-  "main": "index.tsx",
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.6",
     "@testing-library/jest-dom": "^5.17.0",
@@ -18,13 +17,15 @@
     "react-router-dom": "^6.25.1",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "serve": "^14.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   },
   "repository": {
     "type": "git",
